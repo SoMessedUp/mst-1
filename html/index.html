@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lorum Estate</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <div class="background-blur hidden"></div>
+    <nav class="nav">
+        <div class="nav__bg hidden"></div>
+        <div class="wrapper">
+            <div class="nav__content">
+                <svg class="logo nav__logo">
+                    <use xlink:href="img/compressed/sprite.svg#Lorem"></use>
+                </svg>
+                <div class="nav__links">
+                    <a href="#main" class="nav__link" onclick="toggleNav('.nav__links, .nav__bg')">Main</a>
+                    <a href="#benefits" class="nav__link" onclick="toggleNav('.nav__links, .nav__bg')">Benefits</a>
+                    <a href="#contact" class="nav__link" onclick="toggleNav('.nav__links, .nav__bg')">Contact </a>
+                </div>
+                <div class="nav__menu-button" onclick="toggleNav('.nav__links, .nav__bg')">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main id="main" class="main">
+        <div class="wrapper">
+            <h1 class="main__header">
+                Discover your dream propery with Lorem
+            </h1>
+            <p class="main__text">
+                Premium real estate solutions tailored to your needs
+            </p>
+            <img src="img/compressed/main__img.jpg" alt="" class="main__img-mobile">
+            <div class="main__benefits">
+                <div class="main__benefits-row">
+                    <svg class="main__benefits-img">
+                        <use xlink:href="img/compressed/sprite.svg#main__benefits-img"></use>
+                    </svg>
+                    <p class="main__benefits-text">
+                        Up to <span class="main__benefits-text-highlighted">$10 000</span> in savings on select properties
+                    </p>
+                </div>
+                <div class="main__benefits-row">
+                    <svg class="main__benefits-img">
+                        <use xlink:href="img/compressed/sprite.svg#main__benefits-img"></use>
+                    </svg>
+                    <p class="main__benefits-text">
+                        <span class="main__benefits-text-highlighted">30%</span> faster closing process
+                    </p>
+                </div>
+                <div class="main__benefits-row">
+                    <svg class="main__benefits-img">
+                        <use href="img/compressed/sprite.svg#main__benefits-img"></use>
+                    </svg>
+                    <p class="main__benefits-text">
+                        Up to <span class="main__benefits-text-highlighted">17%</span> higher return on investment
+                    </p>
+                </div>
+            </div>
+            <button class="main__btn">order now</button>
+        </div>
+        <img src="img/compressed/main__img.jpg" alt="" class="main__img">
+    </main>
+    <section class="benefits" id="benefits">
+        <div class="wrapper">
+            <div class="benefits__content">
+                <div class="benefits__row">
+                    <img src="img/compressed/benefits__row-img.png" class="benefits__row-img" alt="main__benefits-img">
+                    <p class="benefits__row-text">
+                        <strong>Modern Designs</strong></br>
+                        Our properties feature cutting-edge architecture and eco-friendly designs.
+                    </p>
+                </div>
+                <div class="benefits__row">
+                    <img src="img/compressed/benefits__row-img.png" class="benefits__row-img" alt="main__benefits-img">
+                    <p class="benefits__row-text">
+                        <strong>Prime Locations</strong></br>
+                        Strategically located in vibrant neighborhoods for comfort and accessibility.
+                    </p>
+                </div>
+                <div class="benefits__row">
+                    <img src="img/compressed/benefits__row-img.png" class="benefits__row-img" alt="main__benefits-img">
+                    <p class="benefits__row-text">
+                        <strong>High Investment Potential</strong></br>
+                        Maximize your returns with our exclusive property offers.
+                    </p>
+                </div>
+                <div class="benefits__row">
+                    <img src="img/compressed/benefits__row-img.png" class="benefits__row-img" alt="main__benefits-img">
+                    <p class="benefits__row-text">
+                        <strong>Trusted Expertise</strong></br>
+                        With decades of experience, we make real estate simple and rewarding.
+                    </p>
+                </div>
+                <button class="benefits__btn">order</button>
+            </div>
+        </div>
+        <img src="img/compressed/benefits__img-one.jpg" alt="" class="benefits__img benefits__img-one">
+        <img src="img/compressed/benefits__img-two.jpg" alt="" class="benefits__img benefits__img-two">
+    </section>
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <form class="contact__form">
+                <div class="form__column">
+                    <h3 class="form__heading">
+                        Stay Connected with Us
+                    </h3>
+                    <input type="text" name="name" class="form__input" placeholder="Name">
+                    <input type="email" name="email" class="form__input" placeholder="E-mail">
+                    <div class="form__row">
+                        <input type="checkbox" name="agreement" id="agreement" class="form__input-checkbox"><label for="agreement"
+                            class="form__input-checkbox-label"> I accept Privacy policy</label>
+                    </div>
+                    <button type="submit" class="form__btn">submit form</button>
+                </div>
+                <img src="img/compressed/form__img-bg.png" alt="" class="form__img-bg">
+            </form>
+        </div>
+    </section>
+    <section class="bottom-nav">
+        <div class="bottom-nav__links">
+            <a href="#main" class="bottom-nav__link">Main</a>
+            <a href="#benefits" class="bottom-nav__link">Menefits</a>
+            <a href="#contact" class="bottom-nav__link">Contact</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <svg class="logo">
+                        <use xlink:href="img/compressed/sprite.svg#Lorem"></use>
+                    </svg>
+                    <p class="footer__text">
+                        © 2024, Lorum Estate.
+                    </p>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__links-row">
+                        <a href=""><img src="img/compressed/inst.svg" alt="" class="footer__link"></a>
+                        <a href=""><img src="img/compressed/tiktok.svg" alt="" class="footer__link"></a>
+                        <a href=""><img src="img/compressed/linkedin.svg" alt="" class="footer__link"></a>
+                        <a href=""><img src="img/compressed/facebook.svg" alt="" class="footer__link"></a>
+                        <a href=""><img src="img/compressed/telegram.svg" alt="" class="footer__link"></a>
+                        <a href=""><img src="img/compressed/youtube.svg" alt="" class="footer__link"></a>
+                    </div>
+                    <a href="" class="footer__text">
+                            Privacy policy
+                    </a>
+                </div>
+                <div class="footer__column"><button class="footer__btn">order</button>
+                    <a href="" class="footer__text">
+                            Terms of Use
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
